@@ -1,0 +1,25 @@
+import json
+import os
+
+_nodeSet={}
+
+f_name = '/home/victor/Documents/H_test/unkas_alembic_set_node_01.json'
+
+with open(f_name) as jdf:
+    _nodeSet = json.load(jdf)
+    
+i=0
+
+for _name in _nodeSet:
+    #print _name
+    
+    for _parms in _nodeSet[_name]:
+        
+        try:
+            hou.node(_name).setParms(_parms)
+        except:
+            pass
+            
+        #print _parms
+
+    
