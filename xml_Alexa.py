@@ -8,4 +8,4 @@ for _xml in root.findall('PropertyStrings'):
     nameWB = _xml.find('WhiteBalance')
     print nameLT.text, nameAR.text,nameWB.text,
 
-nuke.nodes.StickyNote(label='LensType -'+nameLT.text+'\n'+" Reel - "+nameAR.text++'\n'+" WB - "+nameWB.text)
+nuke.nodes.StickyNote(label='LensType -'+nameLT.text+'\n'+" Reel - "+nameAR.text+'\n'+" WB - "+nameWB.text)
