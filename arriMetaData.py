@@ -1,5 +1,4 @@
 import os
-import math
 import re
 
 selectedNode = nuke.selectedNode()
