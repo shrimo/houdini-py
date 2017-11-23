@@ -31,7 +31,7 @@ cam = nuke.nodes.Camera (name="Camera %s" % act)
 cam['focal_point'].setAnimated()
 
 
-f = open('/home/shrimo/Documents/python/data.txt', 'a')
+f = open('data.txt', 'a')
 
 for index in range(0,300):
     frame = index
